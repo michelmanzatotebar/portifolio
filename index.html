@@ -1,250 +1,331 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michel Manzato Tebar | Eng Software</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#skills">Habilidades</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
+<nav class="navbar navbar-expand-md fixed-top border-bottom border-secondary">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav gap-md-3">
+        <li class="nav-item"><a class="nav-link text-uppercase small fw-semibold" href="#row1">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase small fw-semibold" href="#row2">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase small fw-semibold" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section id="home">
-  <div class="hero-photo reveal">
-    <img src="perfil.jpg" alt="Michel Manzato Tebar" class="photo-circle">
-  </div>
 
-  <div class="hero-content reveal">
-    <div class="hero-tag">Disponível para oportunidades na área de DEV</div>
-    <div class="hero-tag2">Desenvolvedor Web | Full Stack | Scrum | Engenheiro de Software</div>
-    
-    <h1 class="hero-name">
-      <span>Michel</span> Manzato Tebar
-    </h1>
-    <p class="hero-title">Engenheiro de Software · Desenvolvedor Full Stack</p>
-    <p class="hero-bio">
-      Formado em <strong>Engenharia de Software</strong> na UNIGRAN 
-      e cursando Pós-Graduação em <strong>Desenvolvimento Web</strong> na UTFPR.
-      Apaixonado por construir aplicações do zero com código limpo,
-      boas práticas e arquitetura sólida.
-    </p>
-    
-    <div class="hero-cta">
-      <a href="#contato" class="btn-primary">
-          Entrar em contato →
-      </a>
-      <a href="https://github.com/michelmanzatotebar" target="_blank" class="btn-outline">
-          GitHub ↗
-      </a>
-      <a href="#sobre" class="btn-outline">
-          Ver mais ↓
-      </a>
-  </div>
-  </div>
-</section>
+<section id="row1" class="min-vh-100 d-flex align-items-center border-bottom border-secondary">
+  <div class="container py-5">
+    <div class="row g-5 align-items-center">
 
-<!-- SOBRE -->
-<section id="sobre">
-  <div class="section-wrap">
-    <div class="section-label reveal">Sobre mim</div>
-    <h2 class="section-title reveal">Quem sou eu</h2>
+      <div class="col-lg-6 reveal">
+        <div class="hero-profile d-flex align-items-center gap-4 mb-4">
+          <img src="perfil.jpg" alt="Michel Manzato Tebar" class="photo-circle flex-shrink-0">
+          <div class="hero-badges">
+            <span class="badge border border-danger text-danger font-mono fw-normal mb-2 d-inline-flex align-items-center gap-2">
+              <span class="blink-dot"></span> Disponível para oportunidades
+            </span>
+            <p class="badge border border-secondary text-secondary font-mono fw-normal mb-0 d-inline-block">
+              Full Stack · Scrum · Engenheiro de Software
+            </p>
+          </div>
+        </div>
 
-    <div class="sobre-inner">
-      <div class="sobre-text reveal">
-        <p>
-          Olá, me chamo <strong>Michel</strong> e sou formado em <strong>Engenharia de Software</strong>.
-          Sou apaixonado pela área e estou sempre em busca de novos conhecimentos para evoluir
-          minhas habilidades e experiência no desenvolvimento de software.
+        <h1 class="display-5 fw-semibold lh-1 mb-2">
+          <span class="text-danger">Michel</span> Manzato Tebar
+        </h1>
+        <p class="text-secondary font-mono small mb-4 d-flex align-items-center gap-2">
+          <span class="hero-line"></span>
+          Engenheiro de Software · Desenvolvedor Full Stack
         </p>
-        <p>
-          Atualmente construo <strong>projetos Full Stack do zero</strong>, do back-end
-          ao front-end, aplicando boas práticas, versionamento de códigos, arquitetura e engenharia de software.
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#contato" class="btn btn-danger px-4">
+            <i class="bi bi-envelope me-2"></i>Entrar em contato
+          </a>
+          <a href="https://github.com/michelmanzatotebar" target="_blank" class="btn btn-outline-secondary px-4">
+            <i class="bi bi-github me-2"></i>GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- QUEM SOU EU -->
+      <div class="col-lg-6 reveal border-start border-secondary ps-5">
+        <p class="text-danger font-mono small text-uppercase letter-wide mb-1">
+          <span class="section-line"></span> Sobre mim
         </p>
-        <p>
-          Tenho conhecimento em <strong>Engenharia de Requisitos</strong>, documentação de
-          software, <strong>Scrum</strong> e inglês intermediário.
+        <h2 class="fw-bold mb-4">Quem sou eu</h2>
+
+        <p class="text-secondary lh-lg">
+          Olá, me chamo <strong class="text-light">Michel</strong> e sou formado em
+          <strong class="text-light">Engenharia de Software</strong>. Apaixonado pela área,
+          sempre em busca de novos conhecimentos para evoluir minhas habilidades.
+        </p>
+        <p class="text-secondary lh-lg">
+          Construo <strong class="text-light">projetos Full Stack do zero</strong>, do back-end
+          ao front-end, aplicando boas práticas, versionamento, arquitetura e engenharia de software.
+        </p>
+        <p class="text-secondary lh-lg mb-0">
+          Tenho conhecimento em <strong class="text-light">Engenharia de Requisitos</strong>,
+          documentação de software, <strong class="text-light">Scrum</strong> e inglês intermediário.
         </p>
       </div>
 
-      <div class="sobre-right reveal">
-        <div class="edu-card">
-          <div class="edu-icon">📚</div>
-          <div>
-            <div class="edu-degree">Pós-Graduação · Desenvolvimento Web com Frameworks Modernos</div>
-            <div class="edu-school">UTFPR — Universidade Tecnológica Federal do Paraná</div>
-            <div class="edu-period">2026 — Em andamento</div>
-          </div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-icon">🎓</div>
-          <div>
-            <div class="edu-degree">Bacharelado em Engenharia de Software</div>
-            <div class="edu-school">UNIGRAN — Centro Universitário da Grande Dourados</div>
-            <div class="edu-period">2022 — 2025</div>
-          </div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-icon">🔧</div>
-          <div>
-            <div class="edu-degree">Técnico em Automação Industrial</div>
-            <div class="edu-school">SENAI</div>
-            <div class="edu-period">2019 — 2022</div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- HABILIDADES -->
-<section id="skills">
-  <div class="section-wrap">
-    <div class="section-label reveal">Tecnologias</div>
-    <h2 class="section-title reveal">Habilidades</h2>
+<!-- ROW 2: SOBRE/EDU | HABILIDADES -->
+<section id="row2" class="border-bottom border-secondary bg-dark-subtle">
+  <div class="container py-5">
+    <div class="row g-5">
 
-    <div class="skills-grid">
-      <div class="skill-card reveal">
-        <div class="cat-title">Back-end</div>
-        <div class="skill-list">
-          <div class="skill-item"><span class="skill-dot"></span>Java</div>
-          <div class="skill-item"><span class="skill-dot"></span>JPA / Hibernate</div>
-          <div class="skill-item"><span class="skill-dot"></span>Node.js</div>
-          <div class="skill-item"><span class="skill-dot"></span>PHP</div>
-          <div class="skill-item"><span class="skill-dot"></span>C++</div>
-          <div class="skill-item"><span class="skill-dot"></span>API REST</div>
-          <div></div>
+      <!-- FORMAÇÃO -->
+      <div class="col-lg-6 reveal">
+        <p class="text-danger font-mono small text-uppercase letter-wide mb-1">
+          <span class="section-line"></span> Formação
+        </p>
+        <h2 class="fw-bold mb-4">Educação</h2>
+
+        <div class="d-flex flex-column gap-3">
+
+          <div class="bg-body-tertiary border border-secondary rounded-2 edu-item p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="edu-icon flex-shrink-0"><i class="bi bi-book text-danger"></i></div>
+              <div>
+                <p class="fw-bold small mb-1">Pós-Graduação · Desenvolvimento Web com Frameworks Modernos</p>
+                <p class="text-danger small mb-1">UTFPR — Universidade Tecnológica Federal do Paraná</p>
+                <p class="text-secondary font-mono mb-0" style="font-size:.65rem">2026 — Em andamento</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-body-tertiary border border-secondary rounded-2 edu-item p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="edu-icon flex-shrink-0"><i class="bi bi-mortarboard text-danger"></i></div>
+              <div>
+                <p class="fw-bold small mb-1">Bacharelado em Engenharia de Software</p>
+                <p class="text-danger small mb-1">UNIGRAN — Centro Universitário da Grande Dourados</p>
+                <p class="text-secondary font-mono mb-0" style="font-size:.65rem">2022 — 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-body-tertiary border border-secondary rounded-2 edu-item p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="edu-icon flex-shrink-0"><i class="bi bi-tools text-danger"></i></div>
+              <div>
+                <p class="fw-bold small mb-1">Técnico em Automação Industrial</p>
+                <p class="text-danger small mb-1">SENAI</p>
+                <p class="text-secondary font-mono mb-0" style="font-size:.65rem">2019 — 2022</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="skill-card reveal">
-        <div class="cat-title">Front-end</div>
-        <div class="skill-list">
-          <div class="skill-item"><span class="skill-dot"></span>JavaScript</div>
-          <div class="skill-item"><span class="skill-dot"></span>HTML5</div>
-          <div class="skill-item"><span class="skill-dot"></span>Flutter (Dart)</div>
-          <div class="skill-item"><span class="skill-dot"></span>CSS3</div>
+      <!-- HABILIDADES -->
+      <div class="col-lg-6 reveal border-start border-secondary ps-5">
+        <p class="text-danger font-mono small text-uppercase letter-wide mb-1">
+          <span class="section-line"></span> Tecnologias
+        </p>
+        <h2 class="fw-bold mb-4">Habilidades</h2>
+
+        <div class="row g-3">
+
+          <div class="col-6">
+            <div class="card h-100 bg-body-tertiary border-secondary skill-card">
+              <div class="card-body p-3">
+                <p class="text-danger font-mono small text-uppercase letter-wide mb-2">
+                  <span class="section-line-sm"></span> Back-end
+                </p>
+                <ul class="list-unstyled mb-0">
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Java</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> JPA / Hibernate</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Node.js</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> PHP</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> C++</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> API REST</li>
+                </ul>
+              </div>
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card h-100 bg-body-tertiary border-secondary skill-card">
+              <div class="card-body p-3">
+                <p class="text-danger font-mono small text-uppercase letter-wide mb-2">
+                  <span class="section-line-sm"></span> Front-end
+                </p>
+                <ul class="list-unstyled mb-0">
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> JavaScript</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> HTML5</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Flutter (Dart)</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> CSS3</li>
+                </ul>
+              </div>
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card h-100 bg-body-tertiary border-secondary skill-card">
+              <div class="card-body p-3">
+                <p class="text-danger font-mono small text-uppercase letter-wide mb-2">
+                  <span class="section-line-sm"></span> Banco de Dados
+                </p>
+                <ul class="list-unstyled mb-0">
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> PostgreSQL</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Firebase Firestore</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Firebase Realtime</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> MySQL</li>
+                </ul>
+              </div>
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card h-100 bg-body-tertiary border-secondary skill-card">
+              <div class="card-body p-3">
+                <p class="text-danger font-mono small text-uppercase letter-wide mb-2">
+                  <span class="section-line-sm"></span> DevOps
+                </p>
+                <ul class="list-unstyled mb-0">
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Docker</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Git / GitHub</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Linux</li>
+                </ul>
+              </div>
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card h-100 bg-body-tertiary border-secondary skill-card">
+              <div class="card-body p-3">
+                <p class="text-danger font-mono small text-uppercase letter-wide mb-2">
+                  <span class="section-line-sm"></span> Engenharia
+                </p>
+                <ul class="list-unstyled mb-0">
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Scrum / Ágil</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Eng. Requisitos</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Documentação</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Inglês Intermediário</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-danger"></i> Português Nativo</li>
+                </ul>
+              </div>
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card h-100 border-secondary skill-card skill-card--learning">
+              <div class="card-body p-3">
+                <p class="text-warning font-mono small text-uppercase letter-wide mb-2">
+                  <span class="section-line-sm section-line-sm--warning"></span> Aprendendo
+                </p>
+                <ul class="list-unstyled mb-0">
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-warning"></i> Angular</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-warning"></i> React</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-warning"></i> Vue</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-warning"></i> Spring Boot</li>
+                  <li class="skill-item py-1 text-secondary small"><i class="bi bi-dot text-warning"></i> Django</li>
+                </ul>
+              </div>
+              <div class="skill-bar skill-bar--warning"></div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="skill-card reveal">
-        <div class="cat-title">Banco de Dados</div>
-        <div class="skill-list">
-          <div class="skill-item"><span class="skill-dot"></span>PostgreSQL</div>
-          <div class="skill-item"><span class="skill-dot"></span>Firebase Firestore</div>
-          <div class="skill-item"><span class="skill-dot"></span>Firebase Realtime</div>
-          <div class="skill-item"><span class="skill-dot"></span>MySQL</div>
-        </div>
-      </div>
-
-      <div class="skill-card reveal">
-        <div class="cat-title">DevOps</div>
-        <div class="skill-list">
-          <div class="skill-item"><span class="skill-dot"></span>Docker</div>
-          <div class="skill-item"><span class="skill-dot"></span>Git / GitHub</div>
-          <div class="skill-item"><span class="skill-dot"></span>Linux</div>
-        </div>
-      </div>
-
-      <div class="skill-card reveal">
-        <div class="cat-title">Engenharia & Processos</div>
-        <div class="skill-list">
-          <div class="skill-item"><span class="skill-dot"></span>Scrum / Ágil</div>
-          <div class="skill-item"><span class="skill-dot"></span>Engenharia de Requisitos</div>
-          <div class="skill-item"><span class="skill-dot"></span>Documentação de Software</div>
-          <div class="skill-item"><span class="skill-dot"></span>Inglês Intermediário</div>
-          <div class="skill-item"><span class="skill-dot"></span>Português Nativo </div>
-        </div>
-      </div>
-      <div class="skill-card skill-card--learning reveal">
-  <div class="cat-title cat-title--learning">Em Aprendizado · Pós-Graduação</div>
-  <div class="skill-list">
-    <div class="skill-item"><span class="skill-dot skill-dot--learning"></span>Angular - Front-end</div>
-    <div class="skill-item"><span class="skill-dot skill-dot--learning"></span>React - Front-end</div>
-    <div class="skill-item"><span class="skill-dot skill-dot--learning"></span>Vue - Front-end</div>
-    <div class="skill-item"><span class="skill-dot skill-dot--learning"></span>Spring Boot - Back-end</div>
-    <div class="skill-item"><span class="skill-dot skill-dot--learning"></span>Django - Full stack</div>
-  </div>
-</div>
     </div>
   </div>
 </section>
 
 <!-- CONTATO -->
 <section id="contato">
-  <div class="section-wrap">
-    <div class="section-label reveal">Contato</div>
-    <h2 class="section-title reveal">Meus contatos</h2>
+  <div class="container py-5">
+    <p class="text-danger font-mono small text-uppercase letter-wide reveal">
+      <span class="section-line"></span> Contato
+    </p>
+    <h2 class="fw-bold mb-5 reveal">Meus contatos</h2>
 
-    <div class="contact-buttons reveal">
-      <a href="mailto:micheltebar22@gmail.com?subject=Contato via Portfólio&body=Olá Michel," class="contact-btn">
-        <div class="cb-icon">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        </div>
-        <div class="cb-info">
-          <div class="cb-label">E-mail</div>
-          <div class="cb-value">micheltebar22@gmail.com</div>
-        </div>
-        <div class="cb-arrow">→</div>
-      </a>
+    <div class="row g-4 reveal">
 
-      <a href="https://wa.me/5567999260750" target="_blank" class="contact-btn">
-        <div class="cb-icon">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </div>
-        <div class="cb-info">
-          <div class="cb-label">WhatsApp</div>
-          <div class="cb-value">(67) 99926-0750</div>
-        </div>
-        <div class="cb-arrow">→</div>
-      </a>
+      <div class="col-md-6">
+        <a href="mailto:micheltebar22@gmail.com?subject=Contato via Portfólio&body=Olá Michel," class="contact-btn bg-body-tertiary border border-secondary rounded-2 d-flex align-items-center gap-3 p-3 text-decoration-none">
+          <div class="edu-icon flex-shrink-0"><i class="bi bi-envelope text-danger fs-5"></i></div>
+          <div class="flex-grow-1">
+            <p class="font-mono text-secondary mb-0" style="font-size:.65rem;letter-spacing:.1em">E-MAIL</p>
+            <p class="fw-semibold mb-0 text-light">micheltebar22@gmail.com</p>
+          </div>
+          <i class="bi bi-arrow-right text-secondary contact-arrow"></i>
+        </a>
+      </div>
 
-      <a href="https://www.linkedin.com/in/michel-manzato-tebar" target="_blank" class="contact-btn">
-        <div class="cb-icon">
-          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </div>
-        <div class="cb-info">
-          <div class="cb-label">LinkedIn</div>
-          <div class="cb-value">michel-manzato-tebar</div>
-        </div>
-        <div class="cb-arrow">→</div>
-      </a>
+      <div class="col-md-6">
+        <a href="https://wa.me/5567999260750" target="_blank" class="contact-btn bg-body-tertiary border border-secondary rounded-2 d-flex align-items-center gap-3 p-3 text-decoration-none">
+          <div class="edu-icon flex-shrink-0"><i class="bi bi-whatsapp text-danger fs-5"></i></div>
+          <div class="flex-grow-1">
+            <p class="font-mono text-secondary mb-0" style="font-size:.65rem;letter-spacing:.1em">WHATSAPP</p>
+            <p class="fw-semibold mb-0 text-light">(67) 99926-0750</p>
+          </div>
+          <i class="bi bi-arrow-right text-secondary contact-arrow"></i>
+        </a>
+      </div>
 
-      <a href="https://github.com/michelmanzatotebar" target="_blank" class="contact-btn">
-        <div class="cb-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-        </div>
-        <div class="cb-info">
-          <div class="cb-label">GitHub</div>
-          <div class="cb-value">michelmanzatotebar</div>
-        </div>
-        <div class="cb-arrow">→</div>
-      </a>
+      <div class="col-md-6">
+        <a href="https://www.linkedin.com/in/michel-manzato-tebar" target="_blank" class="contact-btn bg-body-tertiary border border-secondary rounded-2 d-flex align-items-center gap-3 p-3 text-decoration-none">
+          <div class="edu-icon flex-shrink-0"><i class="bi bi-linkedin text-danger fs-5"></i></div>
+          <div class="flex-grow-1">
+            <p class="font-mono text-secondary mb-0" style="font-size:.65rem;letter-spacing:.1em">LINKEDIN</p>
+            <p class="fw-semibold mb-0 text-light">michel-manzato-tebar</p>
+          </div>
+          <i class="bi bi-arrow-right text-secondary contact-arrow"></i>
+        </a>
+      </div>
+
+      <div class="col-md-6">
+        <a href="https://github.com/michelmanzatotebar" target="_blank" class="contact-btn bg-body-tertiary border border-secondary rounded-2 d-flex align-items-center gap-3 p-3 text-decoration-none">
+          <div class="edu-icon flex-shrink-0"><i class="bi bi-github text-danger fs-5"></i></div>
+          <div class="flex-grow-1">
+            <p class="font-mono text-secondary mb-0" style="font-size:.65rem;letter-spacing:.1em">GITHUB</p>
+            <p class="fw-semibold mb-0 text-light">michelmanzatotebar</p>
+          </div>
+          <i class="bi bi-arrow-right text-secondary contact-arrow"></i>
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <p class="footer-copy">© 2026 Michel Manzato Tebar</p>
+<footer class="border-top border-secondary py-4 text-center">
+  <p class="font-mono text-secondary small mb-0 letter-wide">© 2026 Michel Manzato Tebar</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.12 });
-
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 
