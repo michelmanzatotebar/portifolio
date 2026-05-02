@@ -218,4 +218,8 @@ body {
   .photo-circle {
     width: 100px; height: 100px;
   }
+  main{
+    padding: 15px;
+  }
 }
+  
